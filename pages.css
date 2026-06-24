@@ -1,0 +1,127 @@
+/* ---- ACTIVE NAV LINK ---- */
+.nav-links a.active { color: #fff !important; }
+.nav-dropdown-toggle.active { color: #fff !important; }
+.nav-dropdown-menu a.active { color: #2563eb !important; background: #f0f5ff; }
+
+/* ---- PAGE HERO ---- */
+.page-hero {
+  background: #2c4f7c;
+  padding: 72px 24px 80px;
+}
+.industry-hero-banks   { background: linear-gradient(135deg, #1e3a5f, #2c6fad); }
+.industry-hero-nbfc    { background: linear-gradient(135deg, #1b3d2f, #1e7a4f); }
+.industry-hero-insurance { background: linear-gradient(135deg, #3d1e5f, #6b2fa0); }
+
+.page-hero-inner {
+  max-width: 680px;
+  margin: 0 auto 0 calc((100% - 1100px) / 2);
+  padding: 0 24px;
+}
+.page-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.15);
+  color: #fff; font-size: 13px; font-weight: 600;
+  padding: 6px 14px; border-radius: 20px;
+  margin-bottom: 20px; letter-spacing: 0.03em;
+}
+.page-hero h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+  font-weight: 800; line-height: 1.2;
+  color: #fff; margin-bottom: 16px;
+}
+.page-hero p {
+  font-size: 17px; color: rgba(255,255,255,0.85);
+  margin-bottom: 32px; line-height: 1.7; max-width: 560px;
+}
+
+/* ---- PAGE SECTIONS ---- */
+.page-section { padding: 72px 24px; }
+
+.industry-intro {
+  max-width: 720px; margin: 0 auto 48px;
+  text-align: center;
+}
+.industry-intro h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 700; color: #1a1a2e; margin-bottom: 12px;
+}
+.industry-intro p { font-size: 16px; color: #555; line-height: 1.75; }
+
+/* ---- CARD GRID ---- */
+.page-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.page-card {
+  padding: 28px 24px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.page-card:hover {
+  box-shadow: 0 4px 20px rgba(37,99,235,0.08);
+  border-color: #c7d9fb;
+}
+.page-card-icon { font-size: 22px; color: #2563eb; margin-bottom: 12px; }
+.page-card h3 { font-size: 15px; font-weight: 600; color: #1a1a2e; margin-bottom: 8px; }
+.page-card p { font-size: 14px; color: #666; line-height: 1.65; }
+
+/* ---- BLOG GRID ---- */
+.blog-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.blog-card {
+  border: 1px solid #e8e8e8; border-radius: 10px;
+  padding: 28px 24px;
+  display: flex; flex-direction: column; gap: 10px;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.blog-card:hover {
+  box-shadow: 0 4px 20px rgba(37,99,235,0.08);
+  border-color: #c7d9fb;
+}
+.blog-tag {
+  display: inline-block;
+  background: #f0f5ff; color: #2563eb;
+  font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  padding: 3px 10px; border-radius: 4px;
+  align-self: flex-start;
+}
+.blog-card h3 { font-size: 16px; font-weight: 700; color: #1a1a2e; line-height: 1.4; }
+.blog-card p { font-size: 14px; color: #555; line-height: 1.65; flex: 1; }
+.blog-meta { font-size: 12px; color: #aaa; }
+.blog-link {
+  font-size: 14px; font-weight: 600; color: #2563eb;
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 4px;
+}
+.blog-link:hover { text-decoration: underline; }
+
+/* ---- CTA SECTION ---- */
+.page-cta {
+  background: #f0f6ff;
+  border-top: 1px solid #dce8f8;
+  padding: 64px 24px;
+  text-align: center;
+}
+.page-cta h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 700; color: #1a1a2e; margin-bottom: 12px;
+}
+.page-cta p {
+  font-size: 16px; color: #555; max-width: 540px;
+  margin: 0 auto 28px; line-height: 1.7;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 900px) {
+  .page-hero-inner { margin: 0; }
+}
+@media (max-width: 768px) {
+  .page-grid, .blog-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .page-grid, .blog-grid { grid-template-columns: 1fr; }
+}
