@@ -57,6 +57,33 @@ nav {
 .btn-nav:hover { background: #1d4fd8 !important; }
 .nav-phone { font-size: 14px; color: rgba(255,255,255,0.6); font-weight: 500; margin-left: 8px; }
 
+/* ---- NAV DROPDOWN ---- */
+.nav-dropdown { position: relative; }
+.nav-dropdown-toggle {
+  display: flex; align-items: center; gap: 5px;
+  padding: 6px 14px; border-radius: 6px;
+  font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.75);
+  cursor: pointer; transition: color 0.2s, background 0.2s;
+}
+.nav-dropdown-toggle i { font-size: 10px; transition: transform 0.2s; }
+.nav-dropdown:hover .nav-dropdown-toggle { color: #fff; background: rgba(255,255,255,0.1); }
+.nav-dropdown:hover .nav-dropdown-toggle i { transform: rotate(180deg); }
+.nav-dropdown-menu {
+  display: none;
+  position: absolute; top: calc(100% + 8px); left: 0;
+  background: #fff; border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  min-width: 160px; overflow: hidden;
+  z-index: 200;
+}
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-dropdown-menu a {
+  display: block; padding: 11px 18px;
+  font-size: 14px; font-weight: 500; color: #333;
+  transition: background 0.15s, color 0.15s;
+}
+.nav-dropdown-menu a:hover { background: #f0f5ff; color: #2563eb; }
+
 /* ---- HERO ---- */
 .hero {
   background: #2c4f7c;
